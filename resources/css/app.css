@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.blurred-nav {
+    backdrop-filter: blur(1px);
+    background: transparent;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #040c14, transparent 50%), linear-gradient(180deg, transparent 25%, #040c14); /* Gradient overlay */
+    z-index: 0;
+}
+
+@keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Move only half to ensure smooth looping */
+}
+
+.logo-slider {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logos {
+    display: flex;
+    animation: infinite-scroll 15s linear infinite;
+    min-width: 200%; /* Ensures smooth scrolling */
+}
+
+
+
