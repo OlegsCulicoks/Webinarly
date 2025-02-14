@@ -26,7 +26,7 @@
 
     <div class="gradient-overlay"></div>
 
-    <div class="relative z-10 flex items-center h-full w-full px-10 md:px-20 lg:px-32 font-barlow">
+    <div class="relative z-10 flex items-center h-full w-full px-10 md:px-20 lg:px-32 font-barlow" data-aos="zoom-in">
         <div class="max-w-xl text-left">
             <h1 class="text-5xl font-bold leading-tight">
                 Master the Keys to <br> Business Success in Our <br> Free Webinar
@@ -116,7 +116,7 @@
     </div>
 </section>
 
-<section class="max-w-7xl mx-auto px-6 py-16">
+<section id="our-solution" class="max-w-7xl mx-auto px-6 py-16">
     <div class="flex flex-col mt-10 items-center gap-6">
         <div class="max-w-lg">
            <span class="inline-block px-6 py-2 text-sm font-normal text-white border border-[#0061ff] rounded-full bg-[#040c14] shadow-[0_4px_20px_rgba(0,97,255,0.5)]">
@@ -191,7 +191,7 @@
     </div>
 </section>
 
-<section class="bg-[#040c14] py-16">
+<section id="meet-your-host" class="bg-[#040c14] py-16">
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-center mb-20">
             <span class="inline-block px-6 py-2 text-sm font-normal text-white border border-[#0061ff] rounded-full bg-[#040c14] shadow-[0_4px_20px_rgba(0,97,255,0.5)]">
@@ -224,7 +224,7 @@
     </div>
 </section>
 
-<div class="flex flex-col mt-10 items-center gap-6">
+<div id="proven-impact" class="flex flex-col mt-10 items-center gap-6">
     <div class="max-w-lg">
            <span class="inline-block px-6 py-2 text-sm font-normal text-white border border-[#0061ff] rounded-full bg-[#040c14] shadow-[0_4px_20px_rgba(0,97,255,0.5)]">
                 Proven Impact
@@ -259,10 +259,10 @@
         </div>
 
         <div class="relative mt-10 w-full flex justify-center overflow-hidden">
-            <div id="testimonial-container" class="flex gap-6 transition-transform duration-500 ease-in-out">
+            <div class="flex gap-6">
 
-                <div class="testimonial w-[500px] h-[230px] flex-shrink-0 scale-100 opacity-100 transition-all duration-500">
-                    <div class="bg-[#001d3d] rounded-lg p-8 shadow-lg flex flex-col items-center justify-center w-full h-full">
+                <div class="w-[500px] h-[230px] scale-100 opacity-100">
+                    <div class="bg-[#001d3d] rounded-lg p-8 shadow-lg flex flex-col items-center justify-center">
                         <p class="text-white text-xl text-center mb-8">
                             This webinar was a game-changer! We left with clear, actionable steps that led to real growth in our business within months.
                         </p>
@@ -279,8 +279,9 @@
                 </div>
 
 
-                <div class="w-[400px] h-[200px] opacity-50 scale-90 transition-all duration-500">
-                    <div class="bg-[#001d3d] rounded-lg p-6 shadow-lg flex flex-col items-center justify-center w-full h-full">
+
+                <div class="w-[400px] h-[200px] opacity-50 scale-90">
+                    <div class="bg-[#001d3d] rounded-lg p-6 shadow-lg flex flex-col items-center justify-center">
                         <p class="text-white text-lg text-center mb-6">
                             This webinar was a game-changer! We left with clear, actionable steps that led to real growth in our business within months.
                         </p>
@@ -297,8 +298,8 @@
                 </div>
 
 
-                <div class="w-[400px] h-[200px] opacity-50 scale-90 transition-all duration-500">
-                    <div class="bg-[#001d3d] rounded-lg p-6 shadow-lg flex flex-col items-center justify-center w-full h-full">
+                <div class="w-[400px] h-[200px] opacity-50 scale-90">
+                    <div class="bg-[#001d3d] rounded-lg p-6 shadow-lg flex flex-col items-center justify-center">
                         <p class="text-white text-lg text-center mb-6">
                             This webinar was a game-changer! We left with clear, actionable steps that led to real growth in our business within months.
                         </p>
@@ -328,12 +329,9 @@
     </div>
 </div>
 
+<section id="join-us" class="relative min-h-[600px] bg-gradient-to-b from-[#040c14] to-[#0061ff]/55 flex flex-col items-center justify-center text-center px-4 py-20">
 
-
-
-<section class="relative min-h-[600px] bg-gradient-to-b from-[#040c14] to-[#0061ff]/50 flex flex-col items-center justify-center text-center px-4 py-20">
-
-    <div class="relative mt-60 mb-20">
+    <div class="relative mt-60 mb-10">
 
         <div class="absolute left-1/2 transform -translate-x-1/2 -top-48 w-[2px] h-48 bg-gradient-to-b from-transparent to-[#0061ff] shadow-[0_0_10px_rgba(0,97,255,0.5)]"></div>
 
@@ -343,7 +341,7 @@
         </a>
     </div>
 
-    <div class="max-w-4xl mx-auto mb-16">
+    <div class="max-w-4xl mx-auto mb-10">
         <h2 class="text-4xl md:text-5xl lg:text-4xl font-bold text-white mb-8 leading-tight">
             Don't Miss Out on this Opportunity
         </h2>
@@ -359,7 +357,7 @@
 
 
         <div class="absolute left-6 top-1/2 -translate-y-1/2 z-10">
-            <span class="text-[#0061ff] text-4xl font-bold [writing-mode:vertical-rl]">
+            <span class="text-[#0061ff] text-3xl font-bold [writing-mode:vertical-rl]">
                 WEBINAR
             </span>
         </div>
@@ -415,6 +413,7 @@
                 <path d="M135.247 0H133.637V24H135.247V0Z" fill="currentColor"></path>
                 <path d="M143.297 0H138.467V24H143.297V0Z" fill="currentColor"></path>
                 <path d="M149.737 0H146.517V24H149.737V0Z" fill="currentColor"></path>
+                <path d="M149.737 0H146.517V24H149.737V0Z" fill="currentColor"></path>
                 <path d="M154.567 0H152.957V24H154.567V0Z" fill="currentColor"></path>
                 <path d="M162.618 0H157.787V24H162.618V0Z" fill="currentColor"></path>
                 <path d="M167.448 0H164.228V24H167.448V0Z" fill="currentColor"></path>
@@ -437,7 +436,7 @@
         </div>
     </div>
 
-    <a class="mt-10 inline-block px-8 py-3 bg-[#0061ff] text-white font-semibold rounded-lg hover:bg-[#0052d6] transition-colors">
+    <a href="#" class="mt-10 inline-block px-8 py-3 bg-[#0061ff] text-white font-semibold rounded-lg hover:bg-[#0052d6] transition-colors">
         Register now for FREE
     </a>
 </section>
@@ -454,36 +453,83 @@
 
 
 
-
             <div>
                 <h3 class="text-white text-xl font-semibold mb-6">Links</h3>
                 <nav class="space-y-1">
-                    <a href="/" class="block text-[#748da7] hover:text-white transition-colors">Home</a>
-                    <a href="/our-solution" class="block text-[#748da7] hover:text-white transition-colors">Our Solution</a>
-                    <a href="/meet-your-host" class="block text-[#748da7] hover:text-white transition-colors">Meet Your Host</a>
-                    <a href="/proven-impact" class="block text-[#748da7] hover:text-white transition-colors">Proven Impact</a>
-                    <a href="/join-us" class="block text-[#748da7] hover:text-white transition-colors">Join Us</a>
+                    <a href="/"
+                       class="block text-[#748da7] hover:text-white transition-colors">
+                        Home
+                    </a>
+                    <a href="#our-solution"
+                       class="block text-[#748da7] hover:text-white transition-colors"
+                       onclick="scrollToSection('our-solution')">
+                        Our Solution
+                    </a>
+                    <a href="#meet-your-host"
+                       class="block text-[#748da7] hover:text-white transition-colors"
+                       onclick="scrollToSection('meet-your-host')">
+                        Meet Your Host
+                    </a>
+                    <a href="#proven-impact"
+                       class="block text-[#748da7] hover:text-white transition-colors"
+                       onclick="scrollToSection('proven-impact')">
+                        Proven Impact
+                    </a>
+                    <a href="#join-us"
+                       class="block text-[#748da7] hover:text-white transition-colors"
+                       onclick="scrollToSection('join-us')">
+                        Join Us
+                    </a>
                 </nav>
             </div>
+
 
 
             <div>
                 <h3 class="text-white text-xl font-semibold mb-6">Template Pages</h3>
                 <nav class="space-y-1">
-                    <a href="/style-guide" class="block text-[#748da7] hover:text-white transition-colors">Style Guide</a>
-                    <a href="/changelog" class="block text-[#748da7] hover:text-white transition-colors">Changelog</a>
-                    <a href="/licenses" class="block text-[#748da7] hover:text-white transition-colors">Licenses</a>
+                    <a class="block text-[#748da7] hover:text-white transition-colors">Style Guide</a>
+                    <a class="block text-[#748da7] hover:text-white transition-colors">Changelog</a>
+                    <a class="block text-[#748da7] hover:text-white transition-colors">Licenses</a>
                 </nav>
             </div>
         </div>
-        
 
 
-        <div class="mt-16 text-center text-lg">
+        <div class="mt-16 text-center text-xl">
             <p class="text-[#748da7]">Powered by Webflow</p>
         </div>
     </div>
 </footer>
 
+<script>
+    function scrollToSection(sectionId) {
+        event.preventDefault();
+        const section = document.getElementById(sectionId);
+        const navbarHeight = document.getElementById('navbar')?.offsetHeight || 0;
+
+        if (section) {
+            const targetPosition = section.offsetTop - navbarHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hash) {
+            const sectionId = window.location.hash.substring(1);
+            setTimeout(() => {
+                scrollToSection(sectionId);
+            }, 100);
+        }
+    });
+</script>
+
+
+
 </body>
 </html>
+
