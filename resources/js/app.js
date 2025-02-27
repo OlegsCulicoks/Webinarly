@@ -1,3 +1,8 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 import './bootstrap';
 
 window.addEventListener("scroll", function () {
@@ -8,6 +13,8 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("blurred-nav", "p-3");
     }
 });
+
+
 
 
 

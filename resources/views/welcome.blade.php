@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Webinarly</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -26,60 +28,68 @@
 
     <div class="gradient-overlay"></div>
 
-    <div class="relative z-10 flex items-center h-full w-full px-10 md:px-20 lg:px-32 font-barlow" data-aos="zoom-in">
+    <div class="relative z-10 flex items-center h-full w-full px-4 sm:px-10 md:px-20 lg:px-32 font-barlow">
         <div class="max-w-xl text-left">
-            <h1 class="text-5xl font-bold leading-tight">
-                Master the Keys to <br> Business Success in Our <br> Free Webinar
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight" data-aos="fade-up" data-aos-delay="100">
+                Master the Keys to <br class="hidden sm:inline"> Business Success in Our <br class="hidden sm:inline"> Free Webinar
             </h1>
-            <p class="mt-4 text-lg text-gray-300">
+            <p class="mt-4 text-base sm:text-lg md:text-xl text-white" data-aos="fade-up" data-aos-delay="100">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
             </p>
-            <div class="mt-6 flex space-x-4">
-                <a href="#" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700">Register now for FREE</a>
-                <a href="#" class="bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700">Learn more</a>
+            <div class="mt-6 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="bg-blue-600 text-white font-semibold py-3 px-5 rounded-lg shadow-lg hover:bg-blue-700 text-center" data-aos="fade-up" data-aos-delay="900">Register now for FREE</a>
+                <a href="#" class="bg-[#0e2031] text-white font-semibold py-3 px-5 rounded-lg shadow-lg hover:bg-gray-700 text-center" data-aos="fade-up" data-aos-delay="800">Learn more</a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="relative w-[1000px] mx-auto overflow-hidden py-10">
+<section class="relative w-full sm:w-[1000px] mx-auto overflow-hidden py-10 px-4 sm:px-0">
     <div class="text-center max-w-2xl mx-auto mb-10">
-        <h2 class="md:text-[17px] leading-tight text-gray-300">
+        <h2 class="text-base sm:text-lg md:text-xl leading-tight text-white" data-aos="zoom-in">
             Trusted by leading companies to deliver results-driven strategies.
         </h2>
     </div>
 
-    <div class="relative w-full overflow-hidden">
+    <div class="relative w-full overflow-hidden" data-aos="zoom-in">
         <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-[#040c14] via-transparent to-[#040c14]"></div>
 
-        <div class="logo-slider flex space-x-10">
+        <div class="logo-slider flex space-x-10 overflow-x-auto sm:overflow-x-hidden pb-4 sm:pb-0">
             <div class="logos flex space-x-10">
-                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-8 object-contain" alt="Logo 1">
-                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-8 object-contain" alt="Logo 2">
-                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-8 object-contain" alt="Logo 3">
-                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-8 object-contain" alt="Logo 4">
-                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-8 object-contain" alt="Logo 1">
-                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-8 object-contain" alt="Logo 2">
-                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-8 object-contain" alt="Logo 3">
-                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-8 object-contain" alt="Logo 4">
-                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-8 object-contain" alt="Logo 1">
-                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-8 object-contain" alt="Logo 2">
-                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-8 object-contain" alt="Logo 3">
-                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-8 object-contain" alt="Logo 4">
-                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-8 object-contain" alt="Logo 1">
-                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-8 object-contain" alt="Logo 2">
-                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-8 object-contain" alt="Logo 3">
-                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-8 object-contain" alt="Logo 4">
-                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-8 object-contain" alt="Logo 1">
-                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-8 object-contain" alt="Logo 2">
-                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-8 object-contain" alt="Logo 3">
-                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-8 object-contain" alt="Logo 4">
+                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 1">
+                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 2">
+                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 3">
+                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 4">
+                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 1">
+                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 2">
+                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 3">
+                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 4">
+                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 1">
+                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 2">
+                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 3">
+                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 4">
+                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 1">
+                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 2">
+                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 3">
+                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 4">
+                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 1">
+                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 2">
+                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 3">
+                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 4">
+                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 1">
+                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 2">
+                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 3">
+                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 4">
+                <img src="{{ asset('images/Customer Logo 1.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 1">
+                <img src="{{ asset('images/Customer Logo 2.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 2">
+                <img src="{{ asset('images/Customer Logo 3.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 3">
+                <img src="{{ asset('images/Customer Logo 4.svg') }}" class="h-6 sm:h-8 object-contain" alt="Logo 4">
             </div>
         </div>
     </div>
 </section>
 
-<section class="bg-[#040c14] text-white py-16 px-6">
+<section class="bg-[#040c14] text-white py-16 px-6" data-aos="zoom-in">
     <div class="max-w-3xl mx-auto text-center">
         <div class="flex justify-center items-center gap-4">
             <div class="w-10 h-14 text-[#0061ff]">
@@ -93,7 +103,7 @@
                 </svg>
             </div>
 
-            <h2 class="text-3xl md:text-4xl font-bold">Struggling to Scale Your Business?</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">Struggling to Scale Your Business?</h2>
 
             <div class="w-10 h-14 text-[#0061ff]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
@@ -107,7 +117,7 @@
             </div>
         </div>
 
-        <p class="max-w-2xl mx-auto text-gray-300 text-xl leading-relaxed mt-10">
+        <p class="max-w-2xl mx-auto text-white text-base sm:text-lg md:text-xl leading-relaxed mt-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
             Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
             mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.
@@ -126,10 +136,10 @@
     </div>
 </section>
 
-<section class="max-w-7xl mt-[-50px] mx-auto px-6 py-20 relative">
+<section class="max-w-7xl mt-[-50px] mx-auto px-6 py-20 relative" data-aos="fade-up">
     <div class="flex flex-col md:flex-row items-start justify-between">
-        <div class="max-w-lg relative">
-            <div class="relative max-w-lg w-[1200px]">
+        <div class="max-w-lg relative mb-10 md:mb-0">
+            <div class="relative max-w-lg w-full sm:w-[1200px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" class="heading-pattern">
                     <defs>
                         <pattern id="diagonal-stripes" width="15" height="10" patternUnits="userSpaceOnUse">
@@ -139,46 +149,46 @@
                     <rect width="100%" height="72%" fill="url(#diagonal-stripes)"></rect>
                 </svg>
 
-                <p class="absolute top-0 right-0 text-[2.5rem] font-bold text-white leading-[140%] text-end">
+                <p class="absolute top-0 right-0 text-xl sm:text-2xl md:text-[2.5rem] font-bold text-white leading-[140%] text-end">
                     <span class="bg-[#040c14] leading-[140%] px-2 py-1">Proven Strategies for</span>
                     <span class="bg-[#040c14] px-2 py-[1px]">Growth</span>
                 </p>
             </div>
 
-            <p class="text-gray-300 ml--1 text-lg max-w-md">
+            <p class="text-gray-300 ml--1 text-base sm:text-lg max-w-md mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
                 Aliquam in hendrerit urna.
             </p>
         </div>
 
-        <div class="mt-10 md:mt-0 md:w-1/2 space-y-6">
+        <div class="md:w-1/2 space-y-6" data-aos="fade-left">
             <div class="bg-[#001d3d] p-6 rounded-lg shadow-md flex items-start space-x-4 border border-[#001d3d]">
                 <div class="bg-[#002a6d] border border-[#0061ff] text-white p-3 rounded-xl">
-                    <img src="{{ asset('images/medal-icon.svg') }}" class="h-5 object-contain" alt="Logo 1">
+                    <img src="{{ asset('images/medal-icon.svg') }}" class="h-7 object-contain" alt="Logo 1">
                 </div>
                 <div>
                     <h3 class="text-white font-bold text-lg">Expert Insights</h3>
-                    <p class=" text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text-lg mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
 
             <div class="bg-[#001d3d] p-6 rounded-lg shadow-md flex items-start space-x-4 border border-[#001d3d]">
                 <div class="bg-[#002a6d] border border-[#0061ff] text-white p-3 rounded-xl">
-                    <img src="{{ asset('images/clipboard-icon.svg') }}" class="h-5 object-contain" alt="Logo 1">
+                    <img src="{{ asset('images/clipboard-icon.svg') }}" class="h-7 object-contain" alt="Logo 1">
                 </div>
                 <div>
                     <h3 class="text-white font-bold text-lg">Tailored Action Plan</h3>
-                    <p class=" text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text-lg mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
 
             <div class="bg-[#001d3d] p-6 rounded-lg shadow-md flex items-start space-x-4 border border-[#001d3d]">
                 <div class="bg-[#002a6d] border border-[#0061ff] text-white p-3 rounded-xl">
-                    <img src="{{ asset('images/lightning-icon.svg') }}" class="h-5 object-contain" alt="Logo 1">
+                    <img src="{{ asset('images/lightning-icon.svg') }}" class="h-7 object-contain" alt="Logo 1">
                 </div>
                 <div>
                     <h3 class="text-white font-bold text-lg">Immediate Impact</h3>
-                    <p class=" text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text-lg mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
@@ -199,13 +209,13 @@
             </span>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" data-aos="fade-up">
             <div class="space-y-6 text-white">
-                <p class="text-lg leading-160">
+                <p class="text-base sm:text-lg leading-160">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
                 </p>
 
-                <p class="text-lg leading-160">
+                <p class="text-base sm:text-lg leading-160">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.
                 </p>
             </div>
@@ -214,24 +224,24 @@
                 <img
                     src="{{ asset('images/nina collins.webp') }}"
                     alt="Host"
-                    class="w-full h-auto  shadow-xl object-cover"
+                    class="w-full h-auto shadow-xl object-cover"
                 >
                 <div class="absolute bottom-0 left-0 bg-[#040c14] px-3 py-3">
-                    <h2 class="text-4xl font-bold text-white">Nina Collins</h2>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">Nina Collins</h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<div id="proven-impact" class="flex flex-col mt-10 items-center gap-6">
+<div id="proven-impact" class="flex flex-col mt-[150px] items-center gap-6 overflow-x-hidden w-full">
     <div class="max-w-lg">
            <span class="inline-block px-6 py-2 text-sm font-normal text-white border border-[#0061ff] rounded-full bg-[#040c14] shadow-[0_4px_20px_rgba(0,97,255,0.5)]">
                 Proven Impact
            </span>
     </div>
 
-    <div class="mt-10 mx-auto text-center">
+    <div class="mt-10 mx-auto text-center w-full" data-aos="fade-up">
         <div class="flex justify-center items-center gap-4">
             <div class="w-10 h-14 text-[#0061ff]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
@@ -244,7 +254,7 @@
                 </svg>
             </div>
 
-            <h2 class="text-[40px] font-bold ">Real Success Stories</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-[40px] font-bold">Real Success Stories</h2>
 
             <div class="w-10 h-14 text-[#0061ff]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
@@ -258,110 +268,102 @@
             </div>
         </div>
 
-        <div class="relative mt-10 w-full flex justify-center overflow-hidden">
-            <div class="flex gap-6">
 
-                <div class="w-[500px] h-[230px] scale-100 opacity-100">
-                    <div class="bg-[#001d3d] rounded-lg p-8 shadow-lg flex flex-col items-center justify-center">
-                        <p class="text-white text-xl text-center mb-8">
-                            This webinar was a game-changer! We left with clear, actionable steps that led to real growth in our business within months.
-                        </p>
-                        <div class="flex items-center justify-center gap-4">
-                            <img src="{{ asset('images/dog-shaking.gif') }}" alt="Sarah Mitchell"
-                                 class="w-14 h-14 rounded-full object-cover outline outline-2 outline-[#0061ff]"
-                                 style="outline-offset: 3px;">
-                            <div class="text-left">
-                                <h3 class="text-white font-semibold">Dog Shaking</h3>
-                                <p class="text-[#0061ff]">CEO of BrightPath Solutions</p>
+        <div class="container max-w-4xl w-full mx-auto mt-10 px-4 sm:px-6 lg:px-8">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="slider-item active">
+                        <div class="bg-[#001d3d] rounded-lg p-4 sm:p-6 shadow-lg items-center justify-center w-full sm:w-[450px] min-h-[250px]">
+                            <p class="text-white text-base sm:text-xl text-center mt-3 sm:mt-5 mb-4 sm:mb-8">
+                                This webinar was a game-changer! We left with clear, actionable steps that led to real growth in our business within months.
+                            </p>
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+                                <img src="{{ asset('images/dog-shaking.gif') }}" alt="Sarah Mitchell"
+                                     class="w-12 sm:w-14 h-12 sm:h-14 rounded-full object-cover outline outline-2 outline-[#0061ff]"
+                                     style="outline-offset: 2px;">
+                                <div class="text-center sm:text-left mt-2 sm:mt-0">
+                                    <h3 class="text-white font-semibold">Sarah Mitchell</h3>
+                                    <p class="text-[#0061ff]">CEO of BrightPath Solutions</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-
-                <div class="w-[400px] h-[200px] opacity-50 scale-90">
-                    <div class="bg-[#001d3d] rounded-lg p-6 shadow-lg flex flex-col items-center justify-center">
-                        <p class="text-white text-lg text-center mb-6">
-                            This webinar was a game-changer! We left with clear, actionable steps that led to real growth in our business within months.
-                        </p>
-                        <div class="flex items-center justify-center gap-4">
-                            <img src="{{ asset('images/dog-shaking.gif') }}" alt="Sarah Mitchell"
-                                 class="w-12 h-12 rounded-full object-cover outline outline-2 outline-[#0061ff]"
-                                 style="outline-offset: 2px;">
-                            <div class="text-left">
-                                <h3 class="text-white font-semibold">Dog Shaking</h3>
-                                <p class="text-[#0061ff]">CEO of BrightPath Solutions</p>
+                    <div class="slider-item next">
+                        <div class="bg-[#001d3d] rounded-lg p-4 sm:p-6 shadow-lg items-center justify-center w-full sm:w-[450px] min-h-[250px]">
+                            <p class="text-white text-base sm:text-xl text-center mt-3 sm:mt-5 mb-4 sm:mb-8">
+                                This webinar was a game-changer! We left with clear, actionable steps that led to real growth in our business within months.
+                            </p>
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+                                <img src="{{ asset('images/dog-shaking.gif') }}" alt="Sarah Mitchell"
+                                     class="w-12 sm:w-14 h-12 sm:h-14 rounded-full object-cover outline outline-2 outline-[#0061ff]"
+                                     style="outline-offset: 2px;">
+                                <div class="text-center sm:text-left mt-2 sm:mt-0">
+                                    <h3 class="text-white font-semibold">Sarah Mitchell</h3>
+                                    <p class="text-[#0061ff]">CEO of BrightPath Solutions</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="w-[400px] h-[200px] opacity-50 scale-90">
-                    <div class="bg-[#001d3d] rounded-lg p-6 shadow-lg flex flex-col items-center justify-center">
-                        <p class="text-white text-lg text-center mb-6">
-                            This webinar was a game-changer! We left with clear, actionable steps that led to real growth in our business within months.
-                        </p>
-                        <div class="flex items-center justify-center gap-4">
-                            <img src="{{ asset('images/dog-shaking.gif') }}" alt="Sarah Mitchell"
-                                 class="w-12 h-12 rounded-full object-cover outline outline-2 outline-[#0061ff]"
-                                 style="outline-offset: 2px;">
-                            <div class="text-left">
-                                <h3 class="text-white font-semibold">Dog Shaking</h3>
-                                <p class="text-[#0061ff]">CEO of BrightPath Solutions</p>
+                    <div class="slider-item">
+                        <div class="bg-[#001d3d] rounded-lg p-4 sm:p-6 shadow-lg items-center justify-center w-full sm:w-[450px] min-h-[250px]">
+                            <p class="text-white text-base sm:text-xl text-center mt-3 sm:mt-5 mb-4 sm:mb-8">
+                                This webinar was a game-changer! We left with clear, actionable steps that led to real growth in our business within months.
+                            </p>
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+                                <img src="{{ asset('images/dog-shaking.gif') }}" alt="Sarah Mitchell"
+                                     class="w-12 sm:w-14 h-12 sm:h-14 rounded-full object-cover outline outline-2 outline-[#0061ff]"
+                                     style="outline-offset: 2px;">
+                                <div class="text-center sm:text-left mt-2 sm:mt-0">
+                                    <h3 class="text-white font-semibold">Sarah Mitchell</h3>
+                                    <p class="text-[#0061ff]">CEO of BrightPath Solutions</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="flex justify-center gap-4 mt-10">
-            <button id="prev" class="bg-[#001d3d] text-white p-3 rounded-lg">
-                <img src="{{ asset('images/arrow left.svg') }}" alt="Arrow Left" class="w-6 h-6">
-            </button>
-            <button id="next" class="bg-[#001d3d] text-white p-3 rounded-lg">
-                <img src="{{ asset('images/arrow right.svg') }}" alt="Arrow Right" class="w-6 h-6">
-            </button>
+            <div class="flex justify-center gap-4 mb-10">
+                <button id="prev-slide" class="bg-[#001d3d] text-white p-3 rounded-lg">
+                    <img src="{{ asset('images/arrow left.svg') }}" alt="Arrow Left" class="w-6 h-6">
+                </button>
+                <button id="next-slide" class="bg-[#001d3d] text-white p-3 rounded-lg">
+                    <img src="{{ asset('images/arrow right.svg') }}" alt="Arrow Right" class="w-6 h-6">
+                </button>
+            </div>
         </div>
     </div>
 </div>
 
-<section id="join-us" class="relative min-h-[600px] bg-gradient-to-b from-[#040c14] to-[#0061ff]/55 flex flex-col items-center justify-center text-center px-4 py-20">
+<section id="join-us" class="bg-gradient-to-b from-[#040c14] to-[#0061ff]/55 flex flex-col items-center justify-center text-center px-4 py-20">
 
     <div class="relative mt-60 mb-10">
 
         <div class="absolute left-1/2 transform -translate-x-1/2 -top-48 w-[2px] h-48 bg-gradient-to-b from-transparent to-[#0061ff] shadow-[0_0_10px_rgba(0,97,255,0.5)]"></div>
-
 
         <a class="relative inline-block px-6 py-2 text-sm font-semibold text-white border border-[#0061ff] rounded-full bg-[#040c14] shadow-[0_4px_20px_rgba(0,97,255,0.5)] hover:shadow-[0_4px_25px_rgba(0,97,255,0.6)] transition-shadow">
             Join Us
         </a>
     </div>
 
-    <div class="max-w-4xl mx-auto mb-10">
-        <h2 class="text-4xl md:text-5xl lg:text-4xl font-bold text-white mb-8 leading-tight">
+    <div class="max-w-4xl mx-auto mb-10 px-4">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 leading-tight" data-aos="fade-up">
             Don't Miss Out on this Opportunity
         </h2>
-        <div class="space-y-2 text-gray-300 text-lg md:text-xl">
+        <div class="space-y-2 text-white text-base sm:text-lg md:text-xl" data-aos="fade-up">
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.</p>
             <p>Aliquam in hendrerit urna.</p>
         </div>
     </div>
 
-    <div class="items-center bg-[#00173d] p-6 rounded-xl border border-[#0061ff] shadow-lg h-[200px] w-[460px] relative">
+    <div class="items-center bg-[#00173d] p-6 rounded-xl border border-[#0061ff] shadow-lg h-auto w-full max-w-[512px] mx-auto relative" data-aos="fade-up">
 
         <div class="absolute left-0 top-0 h-full w-[80px] bg-[#002a6d] rounded-l-xl"></div>
 
-
         <div class="absolute left-6 top-1/2 -translate-y-1/2 z-10">
-            <span class="text-[#0061ff] text-3xl font-bold [writing-mode:vertical-rl]">
-                WEBINAR
-            </span>
+        <span class="text-[#0061ff] text-4xl font-bold [writing-mode:vertical-rl]">
+            WEBINAR
+        </span>
         </div>
-
 
         <div class="absolute left-20 top-0 h-full text-[#002a6d]">
             <svg xmlns="http://www.w3.org/2000/svg" width="12px" viewBox="0 0 8 16" class="h-full">
@@ -374,17 +376,15 @@
             </svg>
         </div>
 
-
-        <div class="space-y-2 pl-24">
-            <h3 class="text-[#7aadff] text-2xl text-left font-bold leading-tight">
-                Business Growth<br/> Workshop
+        <div class="space-y-9 pl-24 pr-4">
+            <h3 class="text-[#7aadff] text-xl sm:text-2xl text-left font-bold leading-tight">
+                Business Growth Workshop
             </h3>
 
             <div class="space-y-1">
                 <p class="text-[#7aadff] text-left opacity-80">FEB 20, 2024</p>
                 <p class="text-[#7aadff] text-left opacity-80">1:00 PM - 2:30 PM (EST)</p>
             </div>
-
 
             <svg class="text-[#7aadff]" xmlns="http://www.w3.org/2000/svg" width="95%" viewBox="0 0 256 24" fill="white" height="24" preserveAspectRatio="none">
                 <path d="M3.22008 0H0V24H3.22008V0Z" fill="currentColor"></path>
@@ -436,7 +436,8 @@
         </div>
     </div>
 
-    <a href="#" class="mt-10 inline-block px-8 py-3 bg-[#0061ff] text-white font-semibold rounded-lg hover:bg-[#0052d6] transition-colors">
+
+    <a href="#" class="mt-10 inline-block px-8 py-3 bg-[#0061ff] text-white font-semibold rounded-lg hover:bg-[#0052d6] transition-colors" data-aos="fade-up">
         Register now for FREE
     </a>
 </section>
@@ -450,8 +451,6 @@
                     <img src="{{ asset('images/webinarly-logo.svg') }}" alt="Webinarly Logo" class="h-8">
                 </a>
             </div>
-
-
 
             <div>
                 <h3 class="text-white text-xl font-semibold mb-6">Links</h3>
@@ -483,8 +482,6 @@
                 </nav>
             </div>
 
-
-
             <div>
                 <h3 class="text-white text-xl font-semibold mb-6">Template Pages</h3>
                 <nav class="space-y-1">
@@ -495,40 +492,60 @@
             </div>
         </div>
 
-
-        <div class="mt-16 text-center text-xl">
+        <div class="mt-16 text-center text-lg">
             <p class="text-[#748da7]">Powered by Webflow</p>
         </div>
     </div>
 </footer>
 
 <script>
-    function scrollToSection(sectionId) {
-        event.preventDefault();
-        const section = document.getElementById(sectionId);
-        const navbarHeight = document.getElementById('navbar')?.offsetHeight || 0;
+    // Testimonial Slider JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.slider-item');
+        const totalItems = items.length;
+        const prevButton = document.getElementById('prev-slide');
+        const nextButton = document.getElementById('next-slide');
 
-        if (section) {
-            const targetPosition = section.offsetTop - navbarHeight;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
+        function updateSlider() {
+            items.forEach((item, index) => {
+                item.classList.remove('active', 'next', 'prev');
+
+                if (index === currentIndex) {
+                    item.classList.add('active');
+                } else if (index === (currentIndex + 1) % totalItems) {
+                    item.classList.add('next');
+                } else if (index === (currentIndex - 1 + totalItems) % totalItems) {
+                    item.classList.add('prev');
+                }
             });
         }
-    }
 
-
-    document.addEventListener('DOMContentLoaded', function() {
-        if (window.location.hash) {
-            const sectionId = window.location.hash.substring(1);
-            setTimeout(() => {
-                scrollToSection(sectionId);
-            }, 100);
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateSlider();
         }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            updateSlider();
+        }
+
+        // Initialize the slider
+        updateSlider();
+
+        // Add event listeners to buttons
+        if (prevButton) prevButton.addEventListener('click', prevSlide);
+        if (nextButton) nextButton.addEventListener('click', nextSlide);
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
     });
 </script>
-
-
 
 </body>
 </html>

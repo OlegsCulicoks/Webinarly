@@ -32,13 +32,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(90deg, #040c14, transparent 50%), linear-gradient(180deg, transparent 25%, #040c14); /* Gradient overlay */
+    background-image: linear-gradient(90deg, #040c14, transparent 50%), linear-gradient(180deg, transparent 25%, #040c14);
     z-index: 0;
 }
 
 @keyframes infinite-scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Move only half to ensure smooth looping */
+    100% { transform: translateX(-50%); }
 }
 
 .logo-slider {
@@ -50,9 +50,109 @@
 .logos {
     display: flex;
     animation: infinite-scroll 15s linear infinite;
-    min-width: 200%; /* Ensures smooth scrolling */
+    min-width: 200%;
 }
 
+
+
+
+.slider-wrapper {
+    width: 100%;
+    overflow: visible;
+    position: relative;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    height: 300px;
+    padding: 0 150px;
+}
+.slider-item {
+    max-width: 500px;
+    width: 100%;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: scale(0.8);
+    position: absolute;
+    left: 50%;
+}
+.slider-item.active {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+    z-index: 2;
+}
+.slider-item.next {
+    opacity: 0.5;
+    transform: translate(calc(-50% + 550px), 0) scale(0.9);
+    z-index: 1;
+}
+.slider-item.prev {
+    opacity: 0.5;
+    transform: translate(calc(-50% - -1000px), 0) scale(0.9);
+    z-index: 1;
+}
+
+
+.container.max-w-4xl {
+    overflow: visible;
+    padding: 0 100px;
+    max-width: 100%;
+}
+
+
+#proven-impact {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .slider {
+        padding: 0 20px;
+    }
+
+    .slider-item {
+        max-width: 100%;
+    }
+
+    .slider-item.active {
+        transform: translate(-50%, 0) scale(0.9);
+    }
+
+    .slider-item.next,
+    .slider-item.prev {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .container.max-w-4xl {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .slider-item .bg-[#001d3d] {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 250px;
+}
+
+    .slider-item p {
+        font-size: 1rem;
+    }
+
+    .slider-item .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .slider-item .text-left {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+}
 
 
 
